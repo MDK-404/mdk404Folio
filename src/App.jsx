@@ -235,8 +235,8 @@ function App() {
 
               {/* Profile Image */}
               <img
-                src="/public/images/mdk.png"
-                alt="Suvesha Upreti"
+                src="/images/mdk.png"
+                alt="daniyal"
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
