@@ -24,7 +24,7 @@ import doc from "../public/images/doc.jpg";
 import emechanic from "../public/images/emechanic2.jpg";
 import insta from "../public/images/insta.jpg";
 import weather from "../public/images/weather.jpg";
-
+import AiTask from '../public/images/AiTask.jpg'
 function App() {
   const [activeSection, setActiveSection] = useState("about");
 
@@ -85,6 +85,14 @@ function App() {
   ];
 
   const projects = [
+    {
+      title: "Prodigenious",
+      description:
+        "A platform where you can manage your tasks with AI.",
+      image: AiTask,
+      technologies: ["FLutter", "Firebase", "Google Colab"],
+      link: "https://github.com/MDK-404/prodigenious",
+    },
     {
       title: "E-Mechanic",
       description:
