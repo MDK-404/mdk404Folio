@@ -90,7 +90,7 @@ function App() {
       description:
         "A platform where you can manage your tasks with AI.",
       image: AiTask,
-      technologies: ["FLutter", "Firebase", "Google Colab"],
+      technologies: ["FLutter", "Firebase", "Google Colab", "TensorFlow"],
       link: "https://github.com/MDK-404/prodigenious",
     },
     {
