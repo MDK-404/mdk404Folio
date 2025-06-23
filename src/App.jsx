@@ -99,7 +99,7 @@ function App() {
         "A platform connecting vehicle owners with mechanics for on-demand services.",
       image: emechanic,
       technologies: ["FLutter", "Firebase", "Google Maps API"],
-      link: "https://github.com/MDK-404/E-Mechanic",
+      link: "https://github.com/MDK-404/e_mechanic",
     },
     {
       title: "Doctor-Patient Appointment System",
@@ -107,7 +107,7 @@ function App() {
         "An application facilitating seamless appointment scheduling between doctors and patients.",
       image: doc,
       technologies: ["Flutter", "Firebase", "Cloud Firestore"],
-      link: "https://github.com/MDK-404/DoctorPatientAppointment",
+      link: "https://github.com/MDK-404/doctor_appointment_app",
     },
     {
       title: "Weather App",
@@ -115,7 +115,7 @@ function App() {
         "Provides real-time weather updates and forecasts for any location.",
       image: weather,
       technologies: ["Flutter", "OpenWeatherMap API"],
-      link: "https://github.com/MDK-404/WeatherApp",
+      link: "https://github.com/MDK-404/weather_app",
     },
     {
       title: "COVID-19 Tracker",
@@ -123,7 +123,7 @@ function App() {
         "Tracks COVID-19 statistics and provides safety guidelines to users.",
       image: covid,
       technologies: ["Flutter", "REST APIs", "Chart.js"],
-      link: "https://github.com/MDK-404/COVID19Tracker",
+      link: "https://github.com/MDK-404/covidapp",
     },
     {
       title: "Instagram Clone",
