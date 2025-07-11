@@ -297,98 +297,110 @@ function App() {
       </nav>
 
       <div className="max-w-7xl mx-auto px-4 pt-24 pb-20 space-y-32">
-        {/* About Section */}
-       {activeSection === "about" && (
+    {/* About Section */}
+{activeSection === "about" && (
   <section id="about" className="space-y-16 animate-fade-in">
+    {/* Section Heading */}
     <div className="text-center space-y-6">
       <h2 className="text-5xl font-bold gradient-text">About Us</h2>
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto space-y-6">
+        {/* Who We Are */}
         <p className="text-lg text-gray-400 leading-relaxed text-justify">
-          We are a dedicated team of skilled developers offering end-to-end app and web development services. Our expertise spans cross-platform mobile app development using Flutter, backend development with Firebase and Node.js, and modern web technologies like React.js.
-          <br /><br />
-          We’ve successfully delivered projects for international clients across various industries. While some work cannot be showcased publicly due to confidentiality, we ensure quality, performance, and client satisfaction in every solution we build.
-        </p>
+  <strong>Softify</strong> is a dedicated team of skilled developers offering end-to-end app and web development services. Our expertise spans cross-platform mobile app development using Flutter, backend development with Firebase and Node.js, and modern web technologies like React.js.
+  <br /><br />
+  We've successfully delivered projects for international clients across various industries. While some work cannot be showcased publicly due to confidentiality, <strong>Softify</strong> ensures quality, performance, and client satisfaction in every solution we build.
+</p>
+
+
+        {/* Our Mission */}
+        <div className="bg-[#101827] border-l-4 border-blue-500 p-5 rounded-lg shadow-md">
+          <p className="text-lg text-gray-200 font-semibold mb-1">
+            🚀 <span className="text-blue-400 font-bold">Our Mission</span>
+          </p>
+          <p className="text-gray-400 text-base leading-relaxed">
+            To empower startups, businesses, and entrepreneurs by delivering modern, user-centric applications using cutting-edge technologies like <span className="font-semibold text-blue-300">Flutter, Firebase, React.js</span>, and <span className="font-semibold text-blue-300">Node.js</span>.
+          </p>
+        </div>
       </div>
     </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
- 
+    {/* Main Content Row */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      {/* Left Box - Experience */}
+      <div className="bg-[#151B2B] rounded-lg p-8 shadow-lg border border-gray-800">
+        <div className="flex items-center space-x-3 mb-4">
+          <Briefcase className="w-6 h-6 text-blue-400" />
+          <h3 className="text-2xl font-semibold text-white">Experience</h3>
+        </div>
 
-              {/* Experience */}
-<div className="gradient-border-top bg-[#151B2B] rounded-lg p-8 space-y-6">
-  <div className="flex items-center space-x-3">
-    <Briefcase className="w-6 h-6 text-blue-400" />
-    <h3 className="text-2xl font-semibold">Experience</h3>
-  </div>
+        <div className="space-y-6">
+          <div>
+            <p className="text-blue-400">2023 - Present</p>
+            <h4 className="text-xl font-medium text-white">Flutter & Web Developer (Freelance)</h4>
+            <span className="text-gray-400">Remote Projects with Global Clients</span>
 
-  <div className="space-y-8">
-    <div>
-      <p className="text-blue-400">2023 - Present</p>
-      <h4 className="text-xl font-medium">Flutter & Web Developer (Freelance)</h4>
-      <span className="text-gray-400">Remote Projects with Global Clients</span>
+            <div className="flex flex-wrap gap-2 mt-3">
+              {["Flutter", "Firebase", "Node.js", "React.js", "SQL"].map((tech, i) => (
+                <span key={i} className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">{tech}</span>
+              ))}
+            </div>
 
-      <div className="flex flex-wrap gap-2 mt-2">
-        <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">Flutter</span>
-        <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">Firebase</span>
-        <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">Node.js</span>
-        <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">React.js</span>
-        <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">SQL</span>
+            <ul className="mt-4 text-sm text-gray-400 space-y-2 list-disc list-inside">
+              <li>
+                Developed mobile and web solutions for global clients with a strong focus on performance and UI/UX.
+              </li>
+              <li>
+                Delivered end-to-end apps using Flutter, Firebase, and custom Node.js APIs.
+              </li>
+              <li>
+                Built a full-featured POS system in Flutter for <span className="text-blue-300 font-semibold">SAK Retail Solutions</span>.
+              </li>
+              <li>
+                Handled confidential projects under NDA with secure backend integrations.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <ul className="mt-3 text-sm text-gray-400 space-y-2">
-        <li>
-          Worked with various international clients on mobile and web app development projects, focusing on performance, scalability, and modern UI/UX.
-        </li>
-        <li>
-          Delivered end-to-end cross-platform solutions using Flutter, Firebase, and Node.js, maintaining high standards of code quality and client satisfaction.
-        </li>
-        <li>
-          Built the complete frontend of a custom POS system in Flutter for <span className="text-blue-300 font-semibold">SAK Retail Solutions</span>, tailored for their retail operations.
-        </li>
-        <li>
-          Developed several private client apps and backend integrations (under NDA), helping businesses go digital while ensuring security and confidentiality.
-        </li>
-      </ul>
+      {/* Right Box - Contact */}
+      <div className="bg-[#151B2B] rounded-lg p-8 shadow-lg border border-gray-800">
+        <div className="flex items-center space-x-3 mb-6">
+          <Mail className="w-6 h-6 text-blue-400" />
+          <h3 className="text-2xl font-semibold text-white">Contact</h3>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-gray-400">Email</p>
+            <a
+              href="mailto:mdk968196@gmail.com"
+              className="text-blue-400 hover:text-blue-300"
+            >
+              mdk968196@gmail.com
+            </a>
+          </div>
+          <div className="flex gap-6 mt-4 md:mt-0">
+            <a
+              href="https://github.com/MDK-404"
+              className="text-gray-400 hover:text-white transition"
+            >
+              <Github className="w-8 h-8" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/muhammaddaniyalkhan404/"
+              className="text-gray-400 hover:text-white transition"
+            >
+              <Linkedin className="w-8 h-8" />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-            </div>
-            {/* Contact */}
-            <div className="gradient-border-top bg-[#151B2B] rounded-lg p-8">
-              <div className="flex items-center space-x-3 mb-6">
-                <Mail className="w-6 h-6 text-blue-400" />
-                <h3 className="text-2xl font-semibold">Contact</h3>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <p className="text-gray-400">Personal Email</p>
-                  <a
-                    href="mailto:suvesha2002@gmail.com"
-                    className="text-blue-400 hover:text-blue-300"
-                  >
-                    mdk968196@gmail.com
-                  </a>
-                </div>
-                <div>
-                  <div className="flex gap-6 justify-center md:justify-start">
-                    <a
-                      href="https://github.com/MDK-404"
-                      className="text-gray-400 hover:text-white transition"
-                    >
-                      <Github className="w-8 h-8" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/muhammaddaniyalkhan404/"
-                      className="text-gray-400 hover:text-white transition"
-                    >
-                      <Linkedin className="w-8 h-8" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
+  </section>
+)}
+
 
          {/* Services */}
              {activeSection === "services" && (
