@@ -25,6 +25,8 @@ import emechanic from "../public/images/emechanic2.jpg";
 import insta from "../public/images/insta.jpg";
 import weather from "../public/images/weather.jpg";
 import AiTask from '../public/images/AiTask.jpg'
+import Softify from '../public/images/softify.png'
+import SmartCrick from '../public/images/smartcric.png'
 function App() {
   const [activeSection, setActiveSection] = useState("about");
 
@@ -71,12 +73,21 @@ function App() {
       description:
         "Firebase for Backend, Authentication, and Realtime Database.",
     },
-
-
-
+     {
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  name: "Node.js",
+  description:
+    "Node.js for building fast and scalable backend APIs using JavaScript.",
+},
+{
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  name: "React.js",
+  description:
+    "React.js for building dynamic and responsive user interfaces in modern web applications.",
+},
 
     {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
       name: "Django",
       description: "Django for Backend Development and API Creation.",
     },
@@ -93,6 +104,15 @@ function App() {
       technologies: ["FLutter", "Firebase", "Google Colab", "TensorFlow"],
       link: "https://github.com/MDK-404/prodigenious",
     },
+    {
+  title: "Smart Cricket",
+  description:
+    "A React-based web platform that allows users to check player and team statistics before matches. Our team developed the complete frontend, ensuring a responsive and engaging user experience.",
+  image: SmartCrick, // Replace with the actual image for Smart Cricket
+  technologies: ["React", "JavaScript", "Tailwind CSS"],
+  link: "https://smartcricket.netlify.app",
+},
+
     {
       title: "E-Mechanic",
       description:
@@ -190,74 +210,73 @@ function App() {
           </div>
         </div>
 
-        {/* Content */}
-        <div className="relative max-w-7xl mx-auto px-4 py-32 flex flex-col md:flex-row items-center justify-between gap-10">
-          {/* Left Side: Text Content */}
-          <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center">
-            <div className="inline-block bg-[#151B2B]/60 backdrop-blur-lg rounded-full px-6 py-3 mb-8 shadow-lg"></div>
+{/* Content */}
+<div className="relative max-w-7xl mx-auto px-4 py-32 flex flex-col md:flex-row items-center justify-between gap-10">
+  {/* Left Side: Text Content */}
+  <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center">
+    <div className="inline-block bg-[#151B2B]/60 backdrop-blur-lg rounded-full px-6 py-3 mb-8 shadow-lg"></div>
 
-            <h1 className="text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
-              I'm <span className="gradient-text">Muhammad Daniyal Khan</span>
-            </h1>
+    <h1 className="text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+      We are <span className="gradient-text">Softify</span>
+    </h1>
 
-            <h2 className="text-4xl text-gray-300 mb-8 font-medium">
-              Flutter Developer & Tech Enthusiast
-            </h2>
+    <h2 className="text-4xl text-gray-300 mb-8 font-medium">
+      Flutter & Web App Development Team
+    </h2>
 
-            <p className="max-w-2xl text-gray-400 mb-12 leading-relaxed">
-              Welcome to my portfolio, where I share my journey as a developer
-              and the projects I’m passionate about!
-            </p>
+    <p className="max-w-2xl text-gray-400 mb-12 leading-relaxed">
+      Welcome to Softify — a team of passionate developers specializing in creating modern,
+      scalable, and user-friendly mobile and web applications using Flutter, Firebase, and more.
+    </p>
 
-            <div className="flex gap-6 mb-12 justify-center md:justify-start">
-              <a
-                href=""
-                className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-teal-500 hover:to-blue-600 transition px-6 py-3 rounded-full text-white font-semibold shadow-md transform hover:scale-105"
-              >
-                Contact Me via Social links
-              </a>
-            </div>
+    <div className="flex gap-6 mb-12 justify-center md:justify-start">
+      <a
+        href=""
+        className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-teal-500 hover:to-blue-600 transition px-6 py-3 rounded-full text-white font-semibold shadow-md transform hover:scale-105"
+      >
+        Get in Touch with Our Team
+      </a>
+    </div>
 
-            <div className="flex gap-6 justify-center md:justify-start">
-              <a
-                href="https://github.com/MDK-404"
-                className="text-gray-400 hover:text-white transition"
-              >
-                <Github className="w-8 h-8" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/muhammaddaniyalkhan404/"
-                className="text-gray-400 hover:text-white transition"
-              >
-                <Linkedin className="w-8 h-8" />
-              </a>
-            </div>
-          </div>
+    <div className="flex gap-6 justify-center md:justify-start">
+      <a
+        href="https://github.com/MDK-404"
+        className="text-gray-400 hover:text-white transition"
+      >
+        <Github className="w-8 h-8" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/muhammaddaniyalkhan404/"
+        className="text-gray-400 hover:text-white transition"
+      >
+        <Linkedin className="w-8 h-8" />
+      </a>
+    </div>
+  </div>
 
-          {/* Right Side: Profile Image (Fix Position) */}
-          {/* Right Side: Circular Fancy Profile Image */}
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end md:items-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 border-4 border-blue-500 shadow-lg rounded-full overflow-hidden transition-all duration-500 ease-in-out transform hover:scale-105 hover:border-purple-400">
-              {/* Glowing Border Effect */}
-              <div className="absolute inset-0 rounded-full border-4 border-blue-500 animate-pulse"></div>
+  {/* Right Side: Profile Image for Softify */}
+  <div className="w-full md:w-1/2 flex justify-center md:justify-end md:items-center">
+    <div className="relative w-64 h-64 md:w-80 md:h-80 border-4 border-blue-500 shadow-lg rounded-full overflow-hidden transition-all duration-500 ease-in-out transform hover:scale-105 hover:border-purple-400">
+      {/* Glowing Border Effect */}
+      <div className="absolute inset-0 rounded-full border-4 border-blue-500 animate-pulse"></div>
 
-              {/* Profile Image */}
-              <img
-                src="/images/mdk.png"
-                alt="daniyal"
-                className="w-full h-full object-cover rounded-full"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
+      {/* Team Logo or Profile Image */}
+      <img
+        src="/images/softify.png"  // 🔁 Replace this path with your actual image path
+        alt="Softify"
+        className="w-full h-full object-cover rounded-full"
+      />
+    </div>
+  </div>
+</div>
+</div>
       <nav className="fixed top-0 w-full bg-[#151B2B] z-50 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between h-16 items-center">
-            <h1 className="text-2xl font-bold gradient-text">mdk404</h1>
+            <h1 className="text-2xl font-bold gradient-text">Softify</h1>
             <div className="flex space-x-8">
-              {["about", "skills", "projects"].map((section) => (
+              {["about", "skills", "services", "projects"].map((section) => (
+
                 <button
                   key={section}
                   onClick={() => {
@@ -279,245 +298,61 @@ function App() {
 
       <div className="max-w-7xl mx-auto px-4 pt-24 pb-20 space-y-32">
         {/* About Section */}
-        {activeSection === "about" && (
-          <section id="about" className="space-y-16 animate-fade-in">
-            <div className="text-center space-y-6">
-              <h2 className="text-5xl font-bold gradient-text">About Me</h2>
-              <div className="max-w-3xl mx-auto">
-                <p className="text-lg text-gray-400 leading-relaxed">
-                  I am passionate about mobile developer, with expertise in
-                  technologies like Flutter, Dart, and Firebase. I hold a
-                  Bachelor of Science in Software Engineering from National
-                  Univeristy of Modern Languages, Islamabad, where I am a member
-                  of the Mlsa Team. My skills include developing dynamic and
-                  responsive cross-platform mobile applications, enhancing user
-                  experience, and optimizing performance through modern
-                  frameworks and cloud-based technologies such as Firebase C++.
-                </p>
-              </div>
-            </div>
+       {activeSection === "about" && (
+  <section id="about" className="space-y-16 animate-fade-in">
+    <div className="text-center space-y-6">
+      <h2 className="text-5xl font-bold gradient-text">About Us</h2>
+      <div className="max-w-3xl mx-auto">
+        <p className="text-lg text-gray-400 leading-relaxed text-justify">
+          We are a dedicated team of skilled developers offering end-to-end app and web development services. Our expertise spans cross-platform mobile app development using Flutter, backend development with Firebase and Node.js, and modern web technologies like React.js.
+          <br /><br />
+          We’ve successfully delivered projects for international clients across various industries. While some work cannot be showcased publicly due to confidentiality, we ensure quality, performance, and client satisfaction in every solution we build.
+        </p>
+      </div>
+    </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Education */}
-              <div className="gradient-border-top bg-[#151B2B] rounded-lg p-8 space-y-6">
-                <div className="flex items-center space-x-3">
-                  <GraduationCap className="w-6 h-6 text-blue-400" />
-                  <h3 className="text-2xl font-semibold">Education</h3>
-                </div>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-blue-400">2021 - 2025</p>
-                    <h4 className="text-xl font-medium">
-                      Bachelor of Science in Software Engineering
-                    </h4>
-                    <p className="text-gray-400">
-                      National University of Modern Languages,Islamabad
-                    </p>
-                    <p className="text-sm text-gray-500"></p>
-                  </div>
-
-                  {/* Relevant Coursework */}
-                  {/* Relevant Coursework */}
-                  <div className="mt-6">
-                    <h4 className="text-xl font-bold text-blue-400 flex items-center gap-2">
-                      <GraduationCap className="w-6 h-6 text-blue-400" />
-                      Coursework
-                    </h4>
-
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 text-sm text-gray-400">
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <Briefcase className="w-4 h-4 text-blue-400" />
-                        <span>Software Engineering Principles</span>
-                      </div>
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <Code className="w-4 h-4 text-blue-400" />
-                        <span>Data Structures & Algorithms</span>
-                      </div>
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <Cpu className="w-4 h-4 text-blue-400" />
-                        <span>Programming Fundamentals</span>
-                      </div>
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <BarChart className="w-4 h-4 text-blue-400" />
-                        <span>Probability & Statistics</span>
-                      </div>
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <Brain className="w-4 h-4 text-blue-400" />
-                        <span>Artificial Intelligence</span>
-                      </div>
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <Database className="w-4 h-4 text-blue-400" />
-                        <span>Database Management Systems (DBMS)</span>
-                      </div>
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <Camera className="w-4 h-4 text-blue-400" />
-                        <span>Mobile Application Development</span>
-                      </div>
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <Code className="w-4 h-4 text-blue-400" />
-                        <span>Object-Oriented Programming (OOP)</span>
-                      </div>
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <Globe className="w-4 h-4 text-blue-400" />
-                        <span>Web Development (Frontend & Backend)</span>
-                      </div>
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <Smartphone className="w-4 h-4 text-blue-400" />
-                        <span>Analysis of Algorithms</span>
-                      </div>
-                      <div className="flex items-center gap-2 bg-[#151B2B] p-3 rounded-lg shadow-md">
-                        <Wifi className="w-4 h-4 text-blue-400" />
-                        <span>Computer Networks</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+ 
 
               {/* Experience */}
-              <div className="gradient-border-top bg-[#151B2B] rounded-lg p-8 space-y-6">
-                <div className="flex items-center space-x-3">
-                  <Briefcase className="w-6 h-6 text-blue-400" />
-                  <h3 className="text-2xl font-semibold">Experience</h3>
-                </div>
+<div className="gradient-border-top bg-[#151B2B] rounded-lg p-8 space-y-6">
+  <div className="flex items-center space-x-3">
+    <Briefcase className="w-6 h-6 text-blue-400" />
+    <h3 className="text-2xl font-semibold">Experience</h3>
+  </div>
 
-                <div className="space-y-8">
-                  {/* DXC Technology Internship */}
-                  <div>
-                    <p className="text-blue-400">April 2024 - Sep 2024</p>
-                    <h4 className="text-xl font-medium">
-                      Flutter Developer (Intern)
-                    </h4>
-                    <span className="text-gray-400">Code Knacks</span>{" "}
-                    <span className="text-gray-200">Remote</span>
-                    {/* Key Skills */}
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Flutter
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Dart
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Firebase
-                      </span>
-                    </div>
-                    {/* Responsibilities */}
-                    <ul className="mt-3 text-sm text-gray-400 space-y-2">
-                      <li>
-                        {" "}
-                        Developed and implemented a user-friendly interface for
-                        doctors to manage their profiles, approve/decline
-                        appointments, and communicate with patients, resulting
-                        in a 40% increase in doctor retention on the app
-                        platform, utilized Flutter and Firebase to streamline
-                        the appointment approval process.
-                      </li>
-                      <li>
-                        {" "}
-                        Integrated Firebase real-time chat functionality,
-                        enabling secure and instant communication between
-                        doctors andpatients, projected to enhance engagement by
-                        30%andreduceresponsetimesby40%.
-                      </li>
-                    </ul>
-                  </div>
+  <div className="space-y-8">
+    <div>
+      <p className="text-blue-400">2023 - Present</p>
+      <h4 className="text-xl font-medium">Flutter & Web Developer (Freelance)</h4>
+      <span className="text-gray-400">Remote Projects with Global Clients</span>
 
-                  {/* Undergraduate Instructor */}
-                  <div>
-                    <p className="text-blue-400">Jan 2024 - Feb 2024 </p>
-                    <h4 className="text-xl font-medium">
-                      Flutter Developer (Internship)
-                    </h4>
-                    <span className="text-gray-400">Prodigy Infotech</span>{" "}
-                    <span className="text-gray-200">Remote</span>
-                    {/* Key Skills */}
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Mentorship
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Leadership
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Communication
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Problem-Solving
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Dart
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Firebase
-                      </span>
-                    </div>
-                    {/* Responsibilities */}
-                    <ul className="mt-3 text-sm text-gray-400 space-y-2">
-                      <li>
-                        {" "}
-                        Developed a feature-rich to-do list application, in
-                        corporating advanced task management andreminders, which
-                        will lead to a 40% increase in user productivity and
-                        engagement.
-                      </li>
-                      <li>
-                        {" "}
-                        Created an Tic-Tac-Toe game with adaptive difficulty
-                        settings, with a target of driving a 25% improvementin
-                        user interaction and overall retention rates.
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="text-blue-400">Dec 2023 - Mar 2024 </p>
-                    <h4 className="text-xl font-medium">
-                      Flutter Developer (Internship)
-                    </h4>
-                    <span className="text-gray-400"> Bytewise Limited</span>{" "}
-                    <span className="text-gray-200">Remote</span>
-                    {/* Key Skills */}
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Mentorship
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Leadership
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Communication
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Problem-Solving
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Dart
-                      </span>
-                      <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
-                        Firebase
-                      </span>
-                    </div>
-                    {/* Responsibilities */}
-                    <ul className="mt-3 text-sm text-gray-400 space-y-2">
-                      <li>
-                        {" "}
-                        Developed and implemented innovative features on the
-                        Instagramcloneapp,resultingina20%increaseinuser
-                        engagementandretentionmetrics.
-                      </li>
-                      <li>
-                        {" "}
-                        Utilized Flutter framework to optimize app perormance,
-                        reducing load times by 30% and increasing overall user
-                        satisfaction, collaborated with the design team to
-                        enhance user interface and experience..
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+      <div className="flex flex-wrap gap-2 mt-2">
+        <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">Flutter</span>
+        <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">Firebase</span>
+        <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">Node.js</span>
+        <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">React.js</span>
+        <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">SQL</span>
+      </div>
+
+      <ul className="mt-3 text-sm text-gray-400 space-y-2">
+        <li>
+          Worked with various international clients on mobile and web app development projects, focusing on performance, scalability, and modern UI/UX.
+        </li>
+        <li>
+          Delivered end-to-end cross-platform solutions using Flutter, Firebase, and Node.js, maintaining high standards of code quality and client satisfaction.
+        </li>
+        <li>
+          Built the complete frontend of a custom POS system in Flutter for <span className="text-blue-300 font-semibold">SAK Retail Solutions</span>, tailored for their retail operations.
+        </li>
+        <li>
+          Developed several private client apps and backend integrations (under NDA), helping businesses go digital while ensuring security and confidentiality.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
             </div>
-
             {/* Contact */}
             <div className="gradient-border-top bg-[#151B2B] rounded-lg p-8">
               <div className="flex items-center space-x-3 mb-6">
@@ -554,6 +389,64 @@ function App() {
             </div>
           </section>
         )}
+
+         {/* Services */}
+             {activeSection === "services" && (
+  <section id="services" className="space-y-16 animate-fade-in">
+    <div className="text-center space-y-6">
+      <h2 className="text-5xl font-bold gradient-text">Our Services</h2>
+      <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+        We offer full-cycle development services tailored for startups, businesses, and enterprises.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-400 text-lg">
+      <div className="bg-blue-500/5 p-6 rounded-lg shadow-md flex gap-4 items-start">
+        <Smartphone className="w-10 h-10 text-blue-400 mt-1" />
+        <div>
+          <h3 className="text-xl text-blue-400 font-semibold mb-1">
+            Cross-Platform App Development
+          </h3>
+          <p>
+            We build fast, responsive mobile applications for Android and iOS using Flutter and Dart.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-blue-500/5 p-6 rounded-lg shadow-md flex gap-4 items-start">
+        <Database className="w-10 h-10 text-blue-400 mt-1" />
+        <div>
+          <h3 className="text-xl text-blue-400 font-semibold mb-1">Backend Development</h3>
+          <p>
+            Using Firebase, Node.js, and SQL, we build powerful backends with authentication and real-time data.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-blue-500/5 p-6 rounded-lg shadow-md flex gap-4 items-start">
+        <Globe className="w-10 h-10 text-blue-400 mt-1" />
+        <div>
+          <h3 className="text-xl text-blue-400 font-semibold mb-1">Web Development</h3>
+          <p>
+            Modern websites and dashboards built using React.js, HTML5, and CSS3, tailored for your business.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-blue-500/5 p-6 rounded-lg shadow-md flex gap-4 items-start">
+        <Code className="w-10 h-10 text-blue-400 mt-1" />
+        <div>
+          <h3 className="text-xl text-blue-400 font-semibold mb-1">Full-Stack Solutions</h3>
+          <p>
+            From concept to deployment, we deliver end-to-end development for mobile and web products.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+
 
         {/* Skills Section */}
         {activeSection === "skills" && (
