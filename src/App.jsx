@@ -375,10 +375,10 @@ function App() {
           <div>
             <p className="text-gray-400">Email</p>
             <a
-              href="mailto:mdk968196@gmail.com"
+              href="mailto:Softify86@gmail.com"
               className="text-blue-400 hover:text-blue-300"
             >
-              mdk968196@gmail.com
+              Softify86@gmail.com
             </a>
           </div>
           <div className="flex gap-6 mt-4 md:mt-0">
