@@ -25,7 +25,7 @@ import emechanic from "../public/images/emechanic2.jpg";
 import insta from "../public/images/insta.jpg";
 import weather from "../public/images/weather.jpg";
 import AiTask from '../public/images/AiTask.jpg'
-import Softify from '../public/images/softify.png'
+import Study from '../public/images/study.png'
 import SmartCrick from '../public/images/smartcric.png'
 function App() {
   const [activeSection, setActiveSection] = useState("about");
@@ -128,6 +128,14 @@ function App() {
       image: doc,
       technologies: ["Flutter", "Firebase", "Cloud Firestore"],
       link: "https://github.com/MDK-404/doctor_appointment_app",
+    },
+    {
+      title: "Study Buddy",
+      description:
+        " StuddyBuddy is a comprehensive learning platform built for both students and tutors It offers a complete course browsing, enrollment, and management system — with separate dashboards for students and teachers.",
+      image: doc,
+      technologies: ["Flutter", "Firebase", "Cloud Firestore"],
+      link: "https://github.com/Abdulwahab20012001/wahabfyp2",
     },
     {
       title: "Weather App",
