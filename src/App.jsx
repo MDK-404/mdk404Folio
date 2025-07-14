@@ -133,7 +133,7 @@ function App() {
       title: "Study Buddy",
       description:
         " StuddyBuddy is a comprehensive learning platform built for both students and tutors It offers a complete course browsing, enrollment, and management system — with separate dashboards for students and teachers.",
-      image: doc,
+      image: Study,
       technologies: ["Flutter", "Firebase", "Cloud Firestore"],
       link: "https://github.com/Abdulwahab20012001/wahabfyp2",
     },
